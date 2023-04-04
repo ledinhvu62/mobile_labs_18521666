@@ -9,9 +9,7 @@ export default function App() {
         { name: 'B', code: '#3498db' },
         { name: 'C', code: '#2ecc71' },
         { name: 'D', code: '#9b59b6' },
-        { name: 'E', code: '#8b4513' },
-        { name: 'F', code: '#a9a9a9' },
-        { name: 'G', code: '#ffa500' },
+        { name: 'E', code: '#ffa500' },
     ]);
     const layouts = [
         'Row Layout',
@@ -71,7 +69,6 @@ export default function App() {
             <FlatGrid
                 itemDimension={130}
                 data={items}
-                style={styles.gridView}
                 spacing={10}
                 renderItem={({ item }) => (
                     <View
@@ -172,7 +169,6 @@ const styles = StyleSheet.create({
     itemName: {
         fontSize: 16,
         color: '#fff',
-        fontWeight: '600',
         textAlign: 'center',
     },
 });
