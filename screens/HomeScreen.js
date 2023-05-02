@@ -5,7 +5,7 @@ import { Formik } from 'formik'
 import * as yup from 'yup'
 import * as SQLite from 'expo-sqlite'
 
-import CustomAlert from "../components/CustomAlert"
+import CustomAlert from '../components/CustomAlert'
 
 const db = SQLite.openDatabase('SchoolDatabase.db')
 
@@ -104,23 +104,23 @@ export default function HomeScreen({ navigation }) {
                     <View style={styles.form}>
                         <TextInput
                             name='fullName'
-                            label="Full name"
+                            label='Full name'
                             inputContainerStyle={styles.input}
                             onChangeText={handleChange('fullName')}
                             onBlur={handleBlur('fullName')}
                             value={values.fullName.trimStart()}
-                            variant="outlined"
+                            variant='outlined'
                             color='#2196f3'
                         />
                         {errors.fullName && touched.fullName && <Text style={styles.errorText}>{errors.fullName}</Text>}
                         <TextInput
                             name='phoneNumber'
-                            label="Phone number"
+                            label='Phone number'
                             inputContainerStyle={styles.input}
                             onChangeText={handleChange('phoneNumber')}
                             onBlur={handleBlur('phoneNumber')}
                             value={values.phoneNumber}
-                            variant="outlined"
+                            variant='outlined'
                             color='#2196f3'
                             keyboardType='numeric'
                         />

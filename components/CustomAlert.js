@@ -21,7 +21,7 @@ export default function CustomAlert({
                             {displayMode == 'success' ? (
                                 <>
                                     <MaterialIcons
-                                        name="check-circle"
+                                        name='check-circle'
                                         color={'green'}
                                         size={60}
                                     />
@@ -29,7 +29,7 @@ export default function CustomAlert({
                             ) : (
                                 <>
                                     <MaterialIcons
-                                        name="cancel"
+                                        name='cancel'
                                         color={'red'}
                                         size={60}
                                     />
@@ -74,7 +74,7 @@ const styles = StyleSheet.create({
     },
     popupIconMessage: {
         alignItems: 'center',
-        margin: 10
+        margin: 10,
     },
     messageText: {
         fontSize: 18,

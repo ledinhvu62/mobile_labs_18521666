@@ -4,7 +4,7 @@ import { BallIndicator } from 'react-native-indicators'
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons'
 import * as SQLite from 'expo-sqlite'
 
-import CustomAlert from "../components/CustomAlert"
+import CustomAlert from '../components/CustomAlert'
 
 const db = SQLite.openDatabase('SchoolDatabase.db')
 
@@ -49,7 +49,7 @@ export default function ListUsersScreen() {
                         </Text>
                         <View style={styles.phoneNumberView}>
                             <MaterialIcons
-                                name="call"
+                                name='call'
                                 color={'#2196f3'}
                                 size={20}
                             />
